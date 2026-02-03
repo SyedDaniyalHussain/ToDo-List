@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+    <title>My Todo List</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>📝 My Todo List</h1>
+            <p class="subtitle">Organize your tasks efficiently</p>
+        </div>
+
+        <form id="firstForm" class="todo-form">
+            <div class="input-wrapper">
+                <input type="text" id="firstField" class="todo-input" placeholder="What needs to be done?">
+                <button type="button" class="add-btn" onclick="addTodo()">
+                    <span>+</span> Add Task
+                </button>
+            </div>
+        </form>
+
+        <div class="todo-list-wrapper">
+            <ol id="orderList" class="todo-list"></ol>
+            
+            <div class="empty-state" id="emptyState">
+                <div class="empty-icon">✨</div>
+                <p>No tasks yet. Add one to get started!</p>
+            </div>
+        </div>
+
+        <button type="button" class="delete-all-btn" onclick="DeleteAll()">
+            🗑️ Clear All Tasks
+        </button>
+    </div>
+</body>
+
+</html>
